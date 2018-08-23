@@ -1,0 +1,74 @@
+
+/* *************************** */
+/* utils */
+/* *************************** */
+p, footer{
+  text-align: center;
+}
+
+body{
+  color: #222222;
+  font-family: arial, helvetica,sans-serif;
+}
+a{
+  text-decoration: none;
+  /* pour hériter de la couleur du parent */
+  color: inherit;
+}
+
+/* *************************** */
+/* NavBar Header */
+/* *************************** */
+.bt_menu{
+  text-align: right;
+  font-size: 24px;
+}
+
+.bt_menu i{
+  padding: 10px;
+  border: 1px solid #222;
+  display: inline-block;
+}
+
+.banane ul{
+  /* pour enlever les puces */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: none;
+  justify-content: space-around;
+}
+
+li:hover{
+  background-color: darkblue;
+  color: white;
+}
+
+.banane a{
+  /* pour agrandir la zone de clic : avant, c'était juste le mot. Avec la formule suivante, c'est toute la ligne */
+  display: block;
+  /* pour espacer les liens de la navbar */
+  padding: 10px 0;
+}
+
+.banane ul.show{
+  display: block!important;
+}
+
+/* tout adapter à la taille de l'écran. au dessus de 480 px, le menu burger disparait */
+/* CTRL + Shift + M = format mobile */
+@media screen and (min-width:480px){
+  .bt_menu{
+      display: none;
+}
+  .banane ul{
+        text-align: center;
+        justify-content: space-around;
+        display: flex;
+      }
+  }
+}
+/* *************************** */
+/*  */
+/* *************************** */
